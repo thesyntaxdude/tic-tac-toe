@@ -11,6 +11,7 @@
   --lighter-blue: #243B55;
   --text-color: #fff;
   --accent-color: #D54242;
+  --main-font: Inter;
 }
 
 html {
@@ -26,6 +27,7 @@ body {
   padding-inline: 1em;
   display: grid;
   grid-template-rows: 0.4fr 1fr;
+  font-family: var(--main-font), serif;
 }
 
 #scoreboard {
