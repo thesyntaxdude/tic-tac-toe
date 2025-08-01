@@ -17,9 +17,10 @@ In this project I try to better organize my code better using, functions, factor
 - Whichever player gets their 3 of their avatar in a straight line, row, column or diagonally, wins. Else the game is recorded as a draw.
 - After each round, the scoreboard is updated to reflect the outcome of the round.
 
-### What I Tried: 
+### Process: 
 
 - Designed in figma "successfully" for the first time. It's ugly, yes I know. But I'm proud of it. Hoping to improve with time.
 
+- Built the design, with some improvements. I used the mobile-first approach for a fully responsive UI - mobile, tablet, desktop.
 
 - // More coming...
