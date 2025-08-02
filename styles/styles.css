@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -93,9 +95,17 @@ h1 {
   border: 2px solid var(--accent-color);
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-
-  &:hover {
-    background-color: #fff;
-    opacity: 0.5;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
+  
+  &:hover{
+    scale: 0.9;
   }
+}
+
+.turn-message{
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
 }
