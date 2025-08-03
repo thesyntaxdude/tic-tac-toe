@@ -37,16 +37,20 @@
   }
 
   // scoreboard
-  const playerX = document.querySelector("#player-x-score");
-  const playerO = document.querySelector("#player-o-score");
-  const draw = document.querySelector("#draw-score");
   const scoreBoard = generateScoreBoard();
   function generateScoreBoard() {
-    const Score = JSON.parse(localStorage.getItem("scores")) || {
+    const playerX = document.querySelector("#player-x-score");
+    const playerO = document.querySelector("#player-o-score");
+    const draw = document.querySelector("#draw-score");
+
+    const Score = {
       playerXScore: 0,
       playerOScore: 0,
       drawScore: 0,
     };
+    console.log(Score.playerOScore);
+    console.log(Score.playerXScore);
+    console.log(Score.drawScore);
     function playerXWins() {
       Score.playerXScore++;
       playerX.textContent = Score.playerXScore;
@@ -59,8 +63,6 @@
       Score.drawScore++;
       draw.textContent = Score.drawScore;
     }
-
-    localStorage.setItem("scores", JSON.stringify(Score));
 
     return { playerXWins, playerOWins, drawMatch };
   }
@@ -189,5 +191,4 @@
     turnMessageField.textContent = `X goes first`;
   }
 
-  // save the score object to localStorage.
 })();
