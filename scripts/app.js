@@ -186,6 +186,7 @@
     const gameBoard = document.querySelector("#gameboard");
     gameBoard.classList.remove("hide");
     resultsBoard.classList.remove("active");
+    turnMessageField.textContent = `X goes first`;
   }
 
   // save the score object to localStorage.
