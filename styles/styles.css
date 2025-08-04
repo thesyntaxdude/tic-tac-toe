@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *,
 ::before,
 ::after {
@@ -69,15 +71,22 @@ body {
   font-weight: bold;
 }
 
-main{
+#gameboard {
   width: 100%;
   max-width: 455px;
   margin-inline: auto;
 }
 
+#gameboard.hide{
+  display: none;
+}
+
+
 h1 {
-  margin-bottom: 0.5em;
+  margin-block: 0.67em;
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em
 }
 
 .boxes-container {
@@ -93,9 +102,64 @@ h1 {
   border: 2px solid var(--accent-color);
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
 
   &:hover {
-    background-color: #fff;
-    opacity: 0.5;
+    scale: 0.9;
+  }
+}
+
+.turn-message {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+#results-board{
+  display: none;
+}
+
+#results-board.active {
+  background-color: transparent;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+dialog {
+  color: var(--text-color);
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: transparent;
+  position: static;
+  border: none;
+}
+
+dialog p {
+  font-size: 1.5rem;
+}
+
+#restart-btn {
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  border: none;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 100px;
+
+
+  &:hover{
+    opacity: 0.9;
+    scale: 1.1;
   }
 }
