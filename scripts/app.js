@@ -48,9 +48,6 @@
       playerOScore: 0,
       drawScore: 0,
     };
-    console.log(Score.playerOScore);
-    console.log(Score.playerXScore);
-    console.log(Score.drawScore);
     function playerXWins() {
       Score.playerXScore++;
       playerX.textContent = Score.playerXScore;
